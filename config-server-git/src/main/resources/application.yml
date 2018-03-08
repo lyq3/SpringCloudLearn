@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/HackerMan/config-server-git
+server:
+  port: 1201
