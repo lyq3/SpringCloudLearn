@@ -12,6 +12,7 @@
         <module>server1</module>
         <module>client1</module>
         <module>ribbon1</module>
+        <module>feign1</module>
     </modules>
 
 
