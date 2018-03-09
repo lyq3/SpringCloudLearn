@@ -3,9 +3,18 @@ spring:
     name: config-client
   cloud:
     config:
-      uri: http://localhost:1201/
-      profile: default
+      uri: http://localhost:1201
+      profile: dev
+      discovery:
+          enabled: true
+          serviceId: config-server-git
+      failFast: true
       label: master
 
 server:
   port: 2001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
