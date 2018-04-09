@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @Autowired
     private HelloService service;
+
     @RequestMapping("/hello")
     public String test2(){
         return service.hiService();
