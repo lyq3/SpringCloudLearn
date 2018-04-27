@@ -18,6 +18,7 @@
         <module>ribbon-hystrix</module>
         <module>api-gateway</module>
         <module>hystrix-dashboard</module>
+        <module>turbine</module>
     </modules>
 
 
