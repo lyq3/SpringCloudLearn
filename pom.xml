@@ -17,6 +17,7 @@
         <module>config-client</module>
         <module>ribbon-hystrix</module>
         <module>api-gateway</module>
+        <module>hystrix-dashboard</module>
     </modules>
 
 
