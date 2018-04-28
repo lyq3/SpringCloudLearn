@@ -19,6 +19,7 @@
         <module>api-gateway</module>
         <module>hystrix-dashboard</module>
         <module>turbine</module>
+        <module>stream-mq</module>
     </modules>
 
 
