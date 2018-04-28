@@ -31,8 +31,11 @@ public class ApplicationTests {
     }
     @Test
     public void test1(){
+        int i = 0;
         //这里发送消息到队列，SinkReceiver监听到后就会打印输出（消费）
-        sinkSender.output().send(MessageBuilder.withPayload("测试MQ").build());
+        for(;;i++){
+            sinkSender.output().send(MessageBuilder.withPayload("测试MQ"+i).build());
+        }
     }
 
     /**
