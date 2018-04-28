@@ -31,9 +31,13 @@ public class ApplicationTests {
     }
     @Test
     public void test1(){
+        //这里发送消息到队列，SinkReceiver监听到后就会打印输出（消费）
         sinkSender.output().send(MessageBuilder.withPayload("测试MQ").build());
     }
 
+    /**
+     * 这里的input名和SinkReceiver里的input名组成发布订阅关系，一个输入(SubscribableChannel)一个输出(MessageChannel)
+     */
     public interface SinkSender {
 
         String OUTPUT = "input";
