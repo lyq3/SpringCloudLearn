@@ -20,6 +20,7 @@
         <module>hystrix-dashboard</module>
         <module>turbine</module>
         <module>stream-mq</module>
+        <module>Sleuth</module>
     </modules>
 
 
