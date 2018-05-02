@@ -9,3 +9,9 @@ spring:
     port: 5672
     username: lyq
     password: 92932266
+  cloud:
+    stream:
+      bindings:
+        input:
+          group: Service-A
+          destination: greetings
